@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <display-name>dynamicStation</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>getStationInfo</display-name>
+    <servlet-name>getStationInfo</servlet-name>
+    <servlet-class>cn.hfut.dynamicStation.servlet.StationInfoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>getStationInfo</servlet-name>
+    <url-pattern>/getStationInfo</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>StationServlet</display-name>
+    <servlet-name>StationServlet</servlet-name>
+    <servlet-class>cn.hfut.dynamicStation.servlet.StationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StationServlet</servlet-name>
+    <url-pattern>/StationServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
