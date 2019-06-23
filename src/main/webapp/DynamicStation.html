@@ -6,11 +6,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>动态站点</title>
 <link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/dynamicStation.css" rel="stylesheet">
 </head>
 <body>
-
-	<div id="main" style="width: 1200px;height:600px;"></div>
-	
+	<div id="main" style="width: 1500px;height:600px;"></div>
+	<br/>
+	<button type="button" class="btn btn-success" onclick="handleReturn()">return</button>
 
 	<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
 	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
@@ -86,7 +87,9 @@
 			myChart.setOption(option);
 		})
 		
-		
+		function handleReturn() {
+			location.replace("index.html")
+		}
 	</script>
 </body>
 </html>
