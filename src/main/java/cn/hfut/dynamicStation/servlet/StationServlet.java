@@ -36,6 +36,7 @@ public class StationServlet extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		System.setProperty("hadoop.home.dir", "D:\\shixun\\hadoop-2.6.5");
 		int  sid = Integer.parseInt(request.getParameter("sid"));
 		StationVO vo =StationInfoService.getInstance().getStationVO(sid);
 		String jsonStr =JSON.toJSONString(vo);
